@@ -860,6 +860,25 @@ h3 {
   object-fit: cover;
 }
 
+.video-proof-embed {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at top left, rgba(131, 239, 178, 0.16), transparent 28%),
+    #001d4a;
+}
+
+.video-proof-embed iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  min-height: 160px;
+  border: 0;
+  border-radius: 22px;
+  background: #001d4a;
+}
+
 .video-proof-copy h3 {
   color: #eef7f8;
   margin-bottom: 0.75rem;
@@ -1465,6 +1484,10 @@ h3 {
   .video-proof-media video {
     min-height: auto;
     aspect-ratio: 16 / 10;
+  }
+
+  .video-proof-embed iframe {
+    min-height: auto;
   }
 
   .snapshot-tiles {
